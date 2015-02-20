@@ -55,6 +55,6 @@ mkfifo pidora/ctl
 echo "event_command = $HOME/pidora/bar-update.py
 fifo = $HOME/pidora/ctl" >> ~/.config/pianobar/config
 
-sudo sed -i "$isleep 5" /etc/rc.local
-sudo sed -i "$ipython $HOME/pidora/hello.py &" /etc/rc.local
-sudo sed -i "$i " /etc/rc.local
+sudo sed -i "\$isleep 5" /etc/rc.local
+sudo sed -i "\$ipython $HOME/pidora/hello.py &" /etc/rc.local
+sudo sed -i "\$i\\\n" /etc/rc.local
