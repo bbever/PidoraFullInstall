@@ -61,7 +61,7 @@ pianobar
 echo
 cd $HOME
 clear
-sed -i "s,/home/pi,$HOME," cpy.conf
+sed -i "s,/home/pi,$HOME," $HOME/pidora/cpy.conf
 echo
 mkfifo pidora/ctl
 echo "event_command = $HOME/pidora/bar-update.py
